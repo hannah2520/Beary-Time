@@ -1,8 +1,8 @@
 import "./globals.css"
 import type { Metadata } from "next"
-import { Open_Sans } from "next/font/google"
+import { Varela_Round, Open_Sans } from "next/font/google"
 
-const openSans = Open_Sans({ subsets: ["latin"] })
+const varelaRound = Varela_Round({ weight: "400", subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={openSans.className}>{children}</body>
+      <body className={varelaRound.className}>{children}</body>
     </html>
   )
 }
