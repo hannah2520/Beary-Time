@@ -11,7 +11,7 @@ export default function AssignmentContainer() {
     // <div className="aspect-square bg-white w-96 fixed top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]">
     <div className="bigbox">
       <button className="cancel-button">
-        <Image src={CancelIcon} alt="Cancel Icon" width={10} height={10} />
+        <Image src={CancelIcon} alt="Cancel Icon" width={30} height={30} />
       </button>
       <input placeholder="Assignment Name"></input>
       <input placeholder="Assignment Information"></input>

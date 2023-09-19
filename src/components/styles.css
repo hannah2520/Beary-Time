@@ -1,3 +1,6 @@
+body {
+    background-color: #a5b194;
+}
 .bigbox {
     aspect-ratio: 1 / 1;
     background-color: white;
@@ -30,11 +33,4 @@ input {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 5px 8px #737d63;
-}
-
-.cancel-button {
-    width:8%;
-    /* background-size: 100% 100%;
-    background-image: url(./x.png); */
-
 }
