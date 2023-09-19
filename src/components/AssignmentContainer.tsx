@@ -5,15 +5,19 @@ import bear4 from "../../public/bear4.png"
 import bear5 from "../../public/bear5.png"
 import bear6 from "../../public/bear6.png"
 
-import Image from "next/image";
+import Image from "next/image"
 export default function AssignmentContainer() {
-    return <div className=" bg-[#a5b194] p-7 grid gap-3 grid-cols-3 grid-rows-3">
-       <Image src={bear6} alt="bear6"/>
-        <Image src={bear5} alt="bear5"/>
-        <Image src={bear4} alt="bear4"/>
-        <Image src={bear3} alt="bear3"/>
-        <Image src={bear2} alt="bear2"/>
-        <Image src={bear1} alt="bear1"/>
-
+  return (
+    <div className=" bg-[#a5b194] p-7 grid gap-3 grid-cols-3 grid-rows-3">
+      <div className="relative">
+        <Image className="drop-shadow-xl" src={bear6} alt="bear6" />
+        <button className="absolute top-1/2 left-1/2 translate-x-[-175%] translate-y-[75%]">+</button>
+      </div>
+      <Image src={bear5} alt="bear5" />
+      <Image src={bear4} alt="bear4" />
+      <Image src={bear3} alt="bear3" />
+      <Image src={bear2} alt="bear2" />
+      <Image src={bear1} alt="bear1" />
     </div>
+  )
 }
